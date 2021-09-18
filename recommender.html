@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <!-- Basic Page Needs
+        ================================================== -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="icon" href="favicon.ico">
+        <title>Recommender System | Luthfan's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <!-- Mobile Specific Metas
+        ================================================== -->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        
+        <!-- Template CSS Files
+        ================================================== -->
+        <!-- Twitter Bootstrs CSS -->
+        <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+        <!-- Ionicons Fonts Css -->
+        <link rel="stylesheet" href="plugins/ionicons/ionicons.min.css">
+        <!-- animate css -->
+        <link rel="stylesheet" href="plugins/animate-css/animate.css">
+        <!-- Hero area slider css-->
+        <link rel="stylesheet" href="plugins/slider/slider.css">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="plugins/slick/slick.css">
+        <!-- Fancybox -->
+        <link rel="stylesheet" href="plugins/facncybox/jquery.fancybox.css">
+        <!-- hover -->
+        <link rel="stylesheet" href="plugins/hover/hover-min.css">
+        <!-- template main css file -->
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+
+<!--
+        ==================================================
+        Header Section Start
+        ================================================== -->
+        <section class="top-bar animated-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                            <a class="navbar-brand" href="index.html">
+                                <h3><strong>LUTHFAN'S PORTFOLIO</strong></h3>
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+        
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav ml-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="index.html">Home
+                                            <span class="sr-only">(current)</span>
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About Me</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+<!--
+==================================================
+Global Page Section Start
+================================================== -->
+<section class="global-page-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h2>Movie Recommender System Project</h2>
+                    <div class="portfolio-meta">
+                       <p>September 2021</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#Page header-->
+
+<!-- Post Content -->
+<section class="single-post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="post-img text-center">
+                    <img class="img-fluid" alt="Movie" src="images/movie.jpg">
+                </div>                
+                <div class="post-content">
+                    <p>
+                        In this project I will develop basic recommendation systems using Python and pandas. In this notebook, I will focus on providing a basic recommendation system by suggesting items that are most similar to a particular item, in this case, movies. Keep in mind, this is not a true robust recommendation system, to describe it more accurately, it just tells us what movies/items are most similar to your movie choice. This is a project done during a course taken on Udemy.com by Jose Portia.                        
+                        <br><br>
+                        Let's dive into the project!
+                    </p>
+                    <p>
+                        First, let's import the required Libraries.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=0-1" title="Jovian Viewer" height="202" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br><br>
+                    <p>
+                        Now let's get our data.  Since our rating data and the Movie title data is seperated, we will need to merge both data on movie id.                     
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=2-7" title="Jovian Viewer" height="800" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br><br>
+                    <p>
+                        We will start the EDA of our Data. Let's create a ratings dataframe with average rating and number of ratings.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=9-10" title="Jovian Viewer" height="685" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=11-12" title="Jovian Viewer" height="362" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        Now set the number of ratings column
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=13-14" title="Jovian Viewer" height="509" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br><br>
+                    <p>
+                        Let's dive more into the data with Visualization. 
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=15-16" title="Jovian Viewer" height="696" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=17" title="Jovian Viewer" height="542" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br><br>
+                    <p>
+                        Now that we have a general view of the data, let's do the recommendation system.
+                    <br>
+                        Now let's create a matrix that has the user ids on one access and the movie title on another axis. Each cell will then consist of the rating the user gave to that movie. Note there will be a lot of NaN values, because most people have not seen most of the movies.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=18-19" title="Jovian Viewer" height="623" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        We will filter out the top rated movies
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=20" title="Jovian Viewer" height="438" width="100%" style="margin : auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br><br>
+                    <p> 
+                    
+                        Now that we know the most rated movies, let's choose 2 most rated movies with high rating.
+                        <br>
+                        Let's choose Star Wars and Liar Liar then grab the user ratings for those two movies.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=21-22" title="Jovian Viewer" height="318" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        We can then use corrwith() method to get correlations between two pandas series.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=23" title="Jovian Viewer" height="88" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        Let's clean this by removing NaN values and using a DataFrame instead of a series.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=25" title="Jovian Viewer" height="108" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=25" title="Jovian Viewer" height="108" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=26" title="Jovian Viewer" height="508" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        Now if we sort the dataframe by correlation, we should get the most similar movies, however note that we get some results that don't really make sense. This is because there are a lot of movies only watched once by users who also watched star wars (it was the most popular movie).
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=27" title="Jovian Viewer" height="508" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        Let's fix this by filtering out movies that have less than 100 reviews (this value was chosen based off the histogram from earlier).
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=28-29" title="Jovian Viewer" height="562" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        Now sort the values and notice how the titles make a lot more sense.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=30" title="Jovian Viewer" height="525" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <br><br><br>
+                    <p>
+                        Now let's do the same for the comedy Liar Liar.
+                    </p>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=23" title="Jovian Viewer" height="88" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=31-32" title="Jovian Viewer" height="562" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>
+                    <iframe src="https://jovian.ai/embed?url=https://jovian.ai/luthfanhwr/recommender-luthfan/v/1&cellId=33-35" title="Jovian Viewer" height="563" width="100%" style="margin 0 auto; max-width: 800px;" frameborder="0" scrolling="auto"></iframe>                    
+                    <br><br><br>
+                    <p>
+                        We now have the result of the movies that might have high correlation with the movies we chose from earlier.
+                        This simple model can be used as a good recommendation for people who want to see similar movies.
+                    </p>
+                </div>             
+            </div>
+        </div>
+    </div>
+</section>   
+
+
+
+
+            <!--
+            ==================================================
+            Call To Action Section Start
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">WOULD LIKE TO GET IN TOUCH?</h1>
+                                <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Hit the button below for contact details.</p>
+                                <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact Me</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+                <div class="container">
+                    <div class="row content-justify-between">
+                        <div class="col-md-8 col-12 text-center text-center text-lg-left text-md-left">
+                            <p class="copyright">
+                            Made with PASSION by Luthfan Hawari <br>
+                            Copyright Theme Design by <a href="http://www.Themefisher.com" target="_blank">Themefisher</a>. <br> 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer> 
+            <!-- /#footer -->
+
+	<!-- Template Javascript Files
+	================================================== -->
+	<!-- jquery -->
+	<script src="plugins/jQurey/jquery.min.js"></script>
+	<!-- Form Validation -->
+    <script src="plugins/form-validation/jquery.form.js"></script> 
+    <script src="plugins/form-validation/jquery.validate.min.js"></script>
+	<!-- slick slider -->
+	<script src="plugins/slick/slick.min.js"></script>
+	<!-- bootstrap js -->
+	<script src="plugins/bootstrap/bootstrap.min.js"></script>
+	<!-- wow js -->
+	<script src="plugins/wow-js/wow.min.js"></script>
+	<!-- slider js -->
+	<script src="plugins/slider/slider.js"></script>
+	<!-- Fancybox -->
+	<script src="plugins/facncybox/jquery.fancybox.js"></script>
+	<!-- template main js -->
+	<script src="js/main.js"></script>
+ 	</body>
+</html>
